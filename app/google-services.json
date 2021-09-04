@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432580498724",
+    "project_id": "sweetanikca-21ea3",
+    "storage_bucket": "sweetanikca-21ea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432580498724:android:83b2d928908a869c278fb1",
+        "android_client_info": {
+          "package_name": "com.vmmarinc.sweetanikca2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432580498724-l4f71ufbfk0em0jrj09r6jm0qjao5rd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgUnqPHg_esU7ZpyRTZm8H7z4-F_Qm5h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432580498724-l4f71ufbfk0em0jrj09r6jm0qjao5rd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

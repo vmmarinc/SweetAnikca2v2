@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/commentFragment2"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.CommentFragment"
+        android:label="@string/comments"
+        tools:layout="@layout/fragment_comment" >
+        <action
+            android:id="@+id/action_commentFragment2_to_addCommentFragment"
+            app:destination="@id/addCommentFragment" />
+        <action
+            android:id="@+id/action_commentFragment2_to_editCommentFragment"
+            app:destination="@id/editCommentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProductFragment"
+        android:label="@string/Productos"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.HomeFragment"
+        android:label="@string/fragment_home_title"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProfileFragment"
+        android:label="@string/fragment_profile_title"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.ProductDetailFragment"
+        android:label="@string/fragment_product_detail_title"
+        tools:layout="@layout/fragment_product_detail" />
+    <fragment
+        android:id="@+id/addCommentFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.AddCommentFragment"
+        android:label="fragment_add_comment"
+        tools:layout="@layout/fragment_add_comment" >
+        <action
+            android:id="@+id/action_addCommentFragment_to_commentFragment2"
+            app:destination="@id/commentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCommentFragment"
+        android:name="com.vmmarinc.sweetanikca2.ui.fragments.EditCommentFragment"
+        android:label="fragment_edit_comment"
+        tools:layout="@layout/fragment_edit_comment" >
+        <action
+            android:id="@+id/action_editCommentFragment_to_commentFragment2"
+            app:destination="@id/commentFragment2" />
+    </fragment>
+</navigation>
